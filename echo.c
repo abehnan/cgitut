@@ -7,12 +7,11 @@ int main(void) {
     printf("Content-Type:text/html\n\n");
     printf("<html>");
     printf("<head>");
-    printf("<title>EROR</title>");
-    printf("h2 {color: red;text-align: center;}");
+    printf("<style>h2 {color: red;text-align: center;}</style>");
     printf("</head>");
     printf("<body>");
     printf("<h2>");
-    printf("%s", data);
+    printf("%s", data + 5);
     printf("</h2>");
     printf("</body>");
     printf("</html>");
