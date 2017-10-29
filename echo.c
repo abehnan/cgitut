@@ -4,8 +4,7 @@
 int main(void) {
 
     char *data = getenv("QUERY_STRING");
-    printf("%s", data);
-    printf("Content-Type: text/html\n\n");
+    printf("Content-Type:text/html\n\n");
     printf("<html>");
     printf("<head>");
     printf("<title>EROR</title>");
