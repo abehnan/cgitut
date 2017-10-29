@@ -4,6 +4,7 @@
 int main(void) {
 
     char *data = getenv("QUERY_STRING");
+    printf("%s", data);
     printf("Content-Type: text/html\n\n");
     printf("<html>");
     printf("<head>");
@@ -12,7 +13,7 @@ int main(void) {
     printf("</head>");
     printf("<body>");
     printf("<h2>");
-    printf("%s", input);
+    printf("%s", data);
     printf("</h2>");
     printf("</body>");
     printf("</html>");
